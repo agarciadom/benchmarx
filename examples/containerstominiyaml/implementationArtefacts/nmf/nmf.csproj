@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <OutDir>bin</OutDir>
+	  <AssemblyName>NMFSolution</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Containers.nmeta" />
+    <None Remove="MiniYaml.nmeta" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Containers.nmeta" />
+    <EmbeddedResource Include="MiniYaml.nmeta" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="NMF.Collections">
+      <HintPath>..\..\..\..\..\NMF\Build\net6.0\NMF.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NMF.Expressions">
+      <HintPath>..\..\..\..\..\NMF\Build\net6.0\NMF.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="NMF.Expressions.Linq">
+      <HintPath>..\..\..\..\..\NMF\Build\net6.0\NMF.Expressions.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="NMF.Expressions.Utilities">
+      <HintPath>..\..\..\..\..\NMF\Build\net6.0\NMF.Expressions.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="NMF.Models">
+      <HintPath>..\..\..\..\..\NMF\Build\net6.0\NMF.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="NMF.Serialization">
+      <HintPath>..\..\..\..\..\NMF\Build\net6.0\NMF.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="NMF.Synchronizations">
+      <HintPath>..\..\..\..\..\NMF\Build\net6.0\NMF.Synchronizations.dll</HintPath>
+    </Reference>
+    <Reference Include="NMF.Transformations">
+      <HintPath>..\..\..\..\..\NMF\Build\net6.0\NMF.Transformations.dll</HintPath>
+    </Reference>
+    <Reference Include="NMF.Transformations.Core">
+      <HintPath>..\..\..\..\..\NMF\Build\net6.0\NMF.Transformations.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NMF.Utilities">
+      <HintPath>..\..\..\..\..\NMF\Build\net6.0\NMF.Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
