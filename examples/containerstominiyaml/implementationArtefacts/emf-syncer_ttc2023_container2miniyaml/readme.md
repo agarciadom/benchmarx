@@ -5,4 +5,4 @@ The solutions can be found under `./src/main/groovy/containerstominiyaml/yamtl`:
 * Backward transformation: `MiniYAML2Containers.groovy`
 * Benchmark driver: `YAMTLContainersToMiniYAML_BXTool.java`
 
-To import the project in the Eclipse IDE, you'll need the Groovy Development Tools plugin.
+To import the project in the Eclipse IDE, you'll need the [Groovy Development Tools plugin](https://marketplace.eclipse.org/content/groovy-development-tools) from the Eclipse Marketplace.
